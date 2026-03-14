@@ -51,12 +51,12 @@
         /* --- EFECTO DE INTERCONEXIÓN ENTRE CAPAS (Semicírculo hacia arriba) --- */
         .puzzle-tab-bottom {
             position: absolute;
-            bottom: 0; /* Anclado justo en la línea inferior */
+            bottom: 0; 
             left: 50%;
             transform: translateX(-50%);
             width: 80px;
             height: 40px;
-            border-radius: 80px 80px 0 0; /* Forma de semicírculo apuntando hacia ARRIBA */
+            border-radius: 80px 80px 0 0; 
             z-index: 30;
             display: flex;
             align-items: center;
@@ -134,7 +134,7 @@
 
         .profile-glow { box-shadow: 0 0 60px rgba(234, 88, 12, 0.15); }
 
-        /* --- ESTILO DE TARJETA INTERACTIVA FLOTANTE --- */
+        /* --- ESTILO DE TARJETA INTERACTIVA FLOTANTE (Vidrio) --- */
         .stat-card-custom {
             flex: 1;
             display: flex;
@@ -142,8 +142,8 @@
             gap: 1.25rem;
             justify-content: center;
             padding: 2.5rem 2rem;
-            background-color: transparent; /* Fondo transparente para que se vea el vidrio */
-            border-radius: 0; /* Sin esquinas redondeadas (cuadrado) */
+            background-color: transparent; 
+            border-radius: 0; 
             transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
             cursor: default;
             position: relative;
@@ -154,7 +154,7 @@
             transform: scaleY(1.15) translateY(-8px); 
             z-index: 50;
             box-shadow: 0 25px 50px -12px rgba(234, 88, 12, 0.4);
-            border-radius: 0; /* Se mantiene cuadrado al hacer hover */
+            border-radius: 0; 
         }
         
         .stat-content-wrapper {
@@ -203,7 +203,6 @@
 
     <!-- HERO SECTION -->
     <section class="relative min-h-[100vh] lg:min-h-[85vh] flex flex-col pt-20 bg-[#0f172a] pb-24 lg:pb-16">
-        <!-- Contenedor overflow-hidden solo para la imagen, permitiendo que la pestaña sobresalga -->
         <div class="absolute inset-0 z-0 overflow-hidden">
             <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1920&q=80" alt="Formación" class="w-full h-full object-cover object-center opacity-30">
             <div class="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/95 to-transparent"></div>
@@ -360,7 +359,6 @@
             </div>
         </div>
 
-        <!-- PESTAÑA ROMPECABEZAS HACIA ARRIBA (Muerde a Servicios con el color blanco de Metodología) -->
         <div class="puzzle-tab-bottom bg-white">
             <i data-lucide="chevron-down" class="w-5 h-5 text-orange-400"></i>
         </div>
@@ -431,7 +429,6 @@
             </div>
         </div>
 
-        <!-- PESTAÑA ROMPECABEZAS HACIA ARRIBA (Muerde a Metodología con el color azul de Perfil) -->
         <div class="puzzle-tab-bottom bg-[#1e1b4b]">
             <i data-lucide="chevron-down" class="w-5 h-5 text-orange-400"></i>
         </div>
@@ -445,7 +442,8 @@
                 <div class="w-full sm:max-w-sm lg:max-w-none lg:w-5/12 reveal mx-auto">
                     <div class="aspect-[3/4] w-full rounded-[3rem] lg:rounded-[4rem] border-4 sm:border-8 border-white/5 overflow-hidden shadow-2xl profile-glow relative group">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#1e1b4b]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luz Ángela" class="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100">
+                        <!-- PREPARADO PARA GITHUB: Carga PerfilLAB.png -->
+                        <img src="PerfilLAB.png" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';" alt="Luz Ángela Becerra" class="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100">
                     </div>
                 </div>
                 
@@ -493,7 +491,6 @@
             </div>
         </div>
 
-        <!-- PESTAÑA ROMPECABEZAS HACIA ARRIBA (Muerde a Perfil con el color crema de Contacto) -->
         <div class="puzzle-tab-bottom bg-[#fafaf9]">
             <i data-lucide="chevron-down" class="w-5 h-5 text-orange-400"></i>
         </div>
