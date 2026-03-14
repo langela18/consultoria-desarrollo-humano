@@ -48,7 +48,7 @@
             animation: text-gradient-move 6s linear infinite;
         }
 
-        /* --- EFECTO DE INTERCONEXIÓN ENTRE CAPAS (Semicírculo hacia arriba) --- */
+        /* --- EFECTO DE INTERCONEXIÓN ENTRE CAPAS --- */
         .puzzle-tab-bottom {
             position: absolute;
             bottom: 0; 
@@ -134,7 +134,7 @@
 
         .profile-glow { box-shadow: 0 0 60px rgba(234, 88, 12, 0.15); }
 
-        /* --- ESTILO DE TARJETA INTERACTIVA FLOTANTE (Vidrio) --- */
+        /* --- ESTILO DE TARJETA INTERACTIVA FLOTANTE (Vidrio y Cuadrada) --- */
         .stat-card-custom {
             flex: 1;
             display: flex;
@@ -202,20 +202,21 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="relative min-h-[100vh] lg:min-h-[85vh] flex flex-col pt-20 bg-[#0f172a] pb-24 lg:pb-16">
+    <section class="relative min-h-[100vh] lg:min-h-[85vh] flex flex-col pt-20 overflow-hidden bg-[#0f172a] pb-16 lg:pb-12">
         <div class="absolute inset-0 z-0 overflow-hidden">
             <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1920&q=80" alt="Formación" class="w-full h-full object-cover object-center opacity-30">
             <div class="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/95 to-transparent"></div>
         </div>
 
-        <div class="flex-grow relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full flex flex-col md:flex-row md:items-end justify-center md:justify-between py-12 gap-8">
-            <div class="w-full md:w-[70%] reveal active mt-10 md:mt-0">
-                <div class="inline-flex items-center gap-2 bg-white/10 text-orange-400 px-5 py-2 rounded-full mb-6 lg:mb-8 border border-white/10 backdrop-blur-sm relative z-10 animate-consultoria">
+        <!-- Ajuste de equilibrio visual: Usamos justify-center y py-0 para que el contenido se centre verticalmente sin "aire" extra arriba -->
+        <div class="flex-grow relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full flex flex-col md:flex-row md:items-center justify-center md:justify-between py-0 gap-8">
+            <div class="w-full md:w-[70%] reveal active">
+                <div class="inline-flex items-center gap-2 bg-white/10 text-orange-400 px-5 py-2 rounded-full mb-6 border border-white/10 backdrop-blur-sm relative z-10 animate-consultoria">
                     <i data-lucide="award" class="w-4 h-4"></i>
                     <span class="text-[9px] lg:text-[10px] font-bold tracking-[0.3em] uppercase text-white">Consultoría Estratégica & Formación</span>
                 </div>
                 
-                <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-[85px] font-extrabold text-white tracking-tight leading-[1.1] md:leading-[1.0] mb-6 lg:mb-8">
+                <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-[85px] font-extrabold text-white tracking-tight leading-[1.1] md:leading-[1.0] mb-6">
                     Transformamos <br />
                     <span class="text-animated-gradient whitespace-nowrap">Personas y Empresas</span>
                 </h1>
@@ -225,7 +226,7 @@
                 </p>
             </div>
 
-            <div class="w-full md:w-[30%] flex md:justify-end pb-2 reveal active">
+            <div class="w-full md:w-[30%] flex md:justify-end reveal active">
                  <a href="#servicios" class="group w-full md:w-auto bg-[#ea580c] hover:bg-orange-600 text-white px-8 py-4 md:py-3.5 rounded-[1.25rem] font-bold text-[17px] transition-all shadow-xl shadow-orange-500/40 flex items-center justify-center gap-3 relative overflow-hidden">
                     <span class="relative z-10 flex items-center gap-2">Conocer Servicios <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i></span>
                 </a>
@@ -419,7 +420,7 @@
                 <div class="relative reveal mt-12 lg:mt-4 lg:ml-4">
                     <div class="absolute -inset-2 sm:-inset-4 bg-[#1e1b4b] rounded-[2rem] lg:rounded-[3rem] transform -translate-x-3 -translate-y-3 sm:-translate-x-6 sm:-translate-y-6 z-0"></div>
                     <div class="absolute inset-0 bg-[#fca5a1]/20 rounded-[2rem] lg:rounded-[3rem] transform translate-x-2 translate-y-2 sm:translate-x-4 sm:translate-y-4 z-10 animate-float-up"></div>
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80" alt="Metodología en acción" class="relative z-20 rounded-[2rem] lg:rounded-[3rem] shadow-xl border-4 sm:border-[8px] border-white object-cover h-[350px] sm:h-[450px] lg:h-[580px] w-full bg-white animate-float-down">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Metodología en acción" class="relative z-20 rounded-[2rem] lg:rounded-[3rem] shadow-xl border-4 sm:border-[8px] border-white object-cover h-[350px] sm:h-[450px] lg:h-[580px] w-full bg-white animate-float-down">
                     
                     <div class="absolute top-4 -left-4 sm:top-8 sm:-left-12 z-30 bg-white px-5 py-4 sm:px-7 sm:py-5 rounded-2xl sm:rounded-[1.5rem] shadow-2xl flex items-center gap-3 sm:gap-4 border border-slate-50 animate-float-up">
                         <div class="bg-orange-50 p-2 sm:p-3 rounded-xl sm:rounded-full text-[#ea580c]"><i data-lucide="trending-up" class="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.5]"></i></div>
@@ -429,20 +430,20 @@
             </div>
         </div>
 
+        <!-- PESTAÑA ROMPECABEZAS HACIA PERFIL -->
         <div class="puzzle-tab-bottom bg-[#1e1b4b]">
             <i data-lucide="chevron-down" class="w-5 h-5 text-orange-400"></i>
         </div>
     </section>
 
     <!-- Perfil Profesional -->
-    <section id="perfil" class="py-20 lg:pt-32 lg:pb-48 bg-[#1e1b4b] text-white relative overflow-hidden">
+    <section id="perfil" class="py-20 lg:pt-32 lg:pb-12 bg-[#1e1b4b] text-white relative overflow-hidden">
         <div class="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 w-[400px] h-[400px] sm:w-[800px] sm:h-[800px] bg-orange-500/10 rounded-full blur-[100px] sm:blur-[150px] pointer-events-none z-0"></div>
         <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
             <div class="flex flex-col lg:flex-row items-center lg:items-stretch gap-12 lg:gap-24 mb-12">
                 <div class="w-full sm:max-w-sm lg:max-w-none lg:w-5/12 reveal mx-auto">
                     <div class="aspect-[3/4] w-full rounded-[3rem] lg:rounded-[4rem] border-4 sm:border-8 border-white/5 overflow-hidden shadow-2xl profile-glow relative group">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#1e1b4b]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-                        <!-- PREPARADO PARA GITHUB: Carga PerfilLAB.png -->
                         <img src="PerfilLAB.png" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';" alt="Luz Ángela Becerra" class="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100">
                     </div>
                 </div>
@@ -491,13 +492,14 @@
             </div>
         </div>
 
+        <!-- PESTAÑA ROMPECABEZAS HACIA CONTACTO -->
         <div class="puzzle-tab-bottom bg-[#fafaf9]">
             <i data-lucide="chevron-down" class="w-5 h-5 text-orange-400"></i>
         </div>
     </section>
 
     <!-- Footer / Contacto -->
-    <footer id="contacto" class="bg-[#fafaf9] pt-24 pb-16 relative">
+    <footer id="contacto" class="bg-[#fafaf9] pt-8 pb-16 relative">
         <div class="max-w-4xl mx-auto px-6 text-center reveal relative z-10">
             <h2 class="text-4xl sm:text-5xl md:text-7xl font-black text-[#1e1b4b] mb-6 lg:mb-10 leading-[1.1]">¿Listo para evolucionar <br className="hidden sm:block"> con tu equipo?</h2>
             <p class="text-lg sm:text-xl md:text-2xl text-slate-500 mb-12 lg:mb-16 font-medium leading-relaxed max-w-2xl mx-auto">Agenda una reunión y diseñemos juntos la capacitación que tu organización necesita.</p>
